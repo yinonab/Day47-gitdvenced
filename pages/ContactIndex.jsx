@@ -1,6 +1,6 @@
 import { contactService } from "../services/contact.service.js"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
-import { loadContact, removeContact,saveContact } from "../store/actions/contact.action.js"
+import { loadContact, removeContact, saveContact } from "../store/actions/contact.action.js"
 import { UserMsg } from "../cmps/UserMsg.jsx"
 import { ContactList } from "../cmps/ContactList.jsx"
 
@@ -42,7 +42,7 @@ export function ContactIndex() {
         const firstName = prompt('New  First Name?')
         const lastName = prompt('New Last Name?')
         const phone = +prompt('New Phone?')
-        const contactToSave = { ...contact,firstName,phone,lastName }
+        const contactToSave = { ...contact, firstName, phone, lastName }
         saveContact(contactToSave)
             .then((savedContact) => {
                 showSuccessMsg(`Contact updated txt to: $${savedContact.firstName}`)
@@ -55,15 +55,17 @@ export function ContactIndex() {
 
 
     return (
-        <div className="app-header">
-            <UserMsg />
-            <main>
-                <ContactList
-                    contacts={contacts}
-                    onRemoveContact={onRemoveContact}
-                    onAddContact={onAddContact}
-                    onEditContact={onEditContact} />
-            </main>
+        <div className="app-container">
+            <div className="app-header">
+                <UserMsg />
+                <main>
+                    <ContactList
+                        contacts={contacts}
+                        onRemoveContact={onRemoveContact}
+                        onAddContact={onAddContact}
+                        onEditContact={onEditContact} />
+                </main>
+            </div>
         </div>
     )
 }
