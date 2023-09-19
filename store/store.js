@@ -29,7 +29,7 @@ function appReducer(state = initialState, action) {
             return { ...state, contacts }
 
         default:
-            return contacts
+            return state
     }
 
 }
