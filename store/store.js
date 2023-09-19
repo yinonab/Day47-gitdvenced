@@ -13,8 +13,7 @@ function appReducer(state = initialState, action) {
     let contacts
     switch (action.type) {
         case SET_CONTACT:
-            contacts = [...state.contacts, ...action.contacts]
-            return { ...state, contacts }
+            return { ...state, contacts: action.contacts }
 
         case REMOVE_CONTACT:
             contacts = state.contacts.filter(contact => contact._id !== action.contactId)

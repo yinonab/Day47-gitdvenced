@@ -1,4 +1,4 @@
-import { ContactDetails } from './cmps/ContactPreview.jsx'
+import { ContactDetails } from './cmps/ContactDetails.jsx'
 import {AppHeader} from './pages/AppHeader.jsx'
 import {ContactIndex} from './pages/ContactIndex.jsx'
 import { store } from './store/store.js'
