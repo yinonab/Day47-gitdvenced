@@ -1,10 +1,19 @@
-export function ContactDetails(){
+export function ContactDetails(onRemoveContact,onEditContact,contacts,contact){
     return (
         <article>
+
             <h1>Contact</h1>
-            <p><strong>{Contact.firstname+' '+Contact.lastname} </strong></p>
-            <p><strong>{Contact.email} </strong></p>
-            <p><strong>{Contact.phone} </strong></p>            
+            <p><strong>{contact.firstname+' '+contact.lastname} </strong></p>
+            <p><strong>{contact.email} </strong></p>
+            <p><strong>{contact.phone} </strong></p>  
+            <div className="contact-buttons">
+                <button className="remove-button" onClick={() => onRemoveContact(contact._id)}>
+                    <i className="fa-regular fa-trash-can"></i>
+                </button>
+                <button className="edit-button" onClick={() => onEditContact(contact)}>
+                    <i className="fa-solid fa-pen-to-square"></i>
+                </button>
+            </div>     
             {/* <p><strong>Yinon Abarjel</strong></p>
             <p><strong>yinno@gmail.com</strong></p>
             <p><strong>0523406534</strong></p>             */}
