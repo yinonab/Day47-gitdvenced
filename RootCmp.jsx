@@ -1,3 +1,4 @@
+import { ContactDetails } from './cmps/ContactPreview.jsx'
 import {AppHeader} from './pages/AppHeader.jsx'
 import {ContactIndex} from './pages/ContactIndex.jsx'
 import { store } from './store/store.js'
@@ -21,7 +22,8 @@ export function App() {
                         <Routes>
                             {/* <Route element={<HomePage />} path="/" />
                             <Route element={<AboutUs />} path="/about" /> */}
-                            <Route element={<ContactIndex />} path="/" />
+                            <Route element={<ContactIndex  />} path="/" />
+                            <Route element={<ContactDetails />} path="/Details" />
                         </Routes>
                     </main>
                     {/* <AppFooter /> */}

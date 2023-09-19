@@ -2,6 +2,8 @@ import { contactService } from "../services/contact.service.js"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
 import { loadContact, removeContact } from "../store/actions/contact.action.js"
 import { UserMsg } from "../cmps/UserMsg.jsx"
+import { ContactList } from "../cmps/ContactList.jsx"
+
 const { useEffect } = React
 const { useSelector } = ReactRedux
 
