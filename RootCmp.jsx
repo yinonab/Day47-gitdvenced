@@ -22,6 +22,7 @@ export function App() {
                         <Routes>
                             {/* <Route element={<HomePage />} path="/" />
                             <Route element={<AboutUs />} path="/about" /> */}
+                            <Route element={<ContactIndex  />} path="/" />
                             <Route element={<ContactIndex  />} path="/contact" />
                             <Route element={<ContactDetails />} path="/contact/:contactId" />
                         </Routes>
