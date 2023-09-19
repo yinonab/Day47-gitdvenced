@@ -6,7 +6,7 @@ const STORAGE_KEY = 'contactDB'
 // const PAGE_SIZE = 3
 _createContact()
 
-export const todoService = {
+export const contactService = {
     query,
     getById,
     save,
