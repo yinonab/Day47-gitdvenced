@@ -1,6 +1,6 @@
 import { contactService } from "../services/contact.service.js"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
-import { loadContact, removeContact } from "../store/actions/contact.action.js"
+import { loadContact, removeContact,saveContact } from "../store/actions/contact.action.js"
 import { UserMsg } from "../cmps/UserMsg.jsx"
 import { ContactList } from "../cmps/ContactList.jsx"
 
@@ -39,9 +39,10 @@ export function ContactIndex() {
     }
 
     function onEditContact(contact) {
-        const firstName = prompt('New Name?')
-        const phone = +prompt('New Name?')
-        const contactToSave = { ...contact,firstName,phone }
+        const firstName = prompt('New  First Name?')
+        const lastName = prompt('New Last Name?')
+        const phone = +prompt('New Phone?')
+        const contactToSave = { ...contact,firstName,phone,lastName }
         saveContact(contactToSave)
             .then((savedContact) => {
                 showSuccessMsg(`Contact updated txt to: $${savedContact.firstName}`)
