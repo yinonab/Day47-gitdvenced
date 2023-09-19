@@ -1,1 +1,6 @@
 @import '/assets/cmp/ContactList.css';
+@import'/assets/cmp/ContactPreview.css';
+@import '/assets/cmp/ContactIndex.css';
+
+/* Setup */
+@import'/assets/setup/typography.css';
