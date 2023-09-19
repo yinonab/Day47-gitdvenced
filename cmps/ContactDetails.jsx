@@ -26,8 +26,9 @@ export function ContactDetails(){
     if (!contact) return <div>Loading...</div>
     return (
         <section className="contact-details">
-            <h1>Name: {contact.firstName}</h1>
-            <h5>Phone: ${contact.phone}</h5>
+            <h1>First Name: {contact.firstName}</h1>
+            <h1>Last Name: {contact.lastName}</h1>
+            <h5>Phone: {contact.phone}</h5>
             <p>📝</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptas cumque tempore, aperiam sed dolorum rem! Nemo quidem, placeat perferendis tempora aspernatur sit, explicabo veritatis corrupti perspiciatis repellat, enim quibusdam!</p>
             <Link to="/contact">Back</Link>

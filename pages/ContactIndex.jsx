@@ -59,6 +59,7 @@ export function ContactIndex() {
             <div className="app-header">
                 <UserMsg />
                 <main>
+                    <button className="add" onClick={onAddContact}>Add Contact</button>
                     <ContactList
                         contacts={contacts}
                         onRemoveContact={onRemoveContact}

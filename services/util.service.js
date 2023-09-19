@@ -5,7 +5,9 @@ export const utilService = {
     loadFromStorage,
     saveToStorage,
     animateCSS,
-    getTimeFromStamp
+    getTimeFromStamp,
+    makeLorem,
+    makePhoneNumber
 }
 
 function makeId(length = 6) {
@@ -20,7 +22,7 @@ function makeId(length = 6) {
 }
 
 function makeLorem(size = 20) {
-    var words = ['The sky', 'above', 'the port', 'was', 'the color of television', 'tuned', 'to', 'a dead channel', '.', 'All', 'this happened', 'more or less', '.', 'I', 'had', 'the story', 'bit by bit', 'from various people', 'and', 'as generally', 'happens', 'in such cases', 'each time', 'it', 'was', 'a different story', '.', 'It', 'was', 'a pleasure', 'to', 'burn']
+    var words = [' sky', 'above', ' port', 'was', ' color of television', 'tuned', 'to', 'a dead channel', '.', 'All', 'this happened', 'more or less', '.', 'I', 'had', ' story', 'bit by bit', 'from various people', 'and', 'as generally', 'happens', 'in such cases', 'each time', 'it', 'was', 'a different story', '.', 'It', 'was', 'a pleasure', 'to', 'burn']
     var txt = ''
     while (size > 0) {
         size--
@@ -32,7 +34,7 @@ function makeLorem(size = 20) {
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min)
     max = Math.floor(max)
-    return Math.floor(Math.random() * (max - min + 1)) + min //The maximum is inclusive and the minimum is inclusive 
+    return Math.floor(Math.random() * (max - min + 1)) + min // maximum is inclusive and  minimum is inclusive 
 }
 
 function saveToStorage(key, value) {
@@ -52,7 +54,7 @@ function animateCSS(el, animation) {
 
         el.classList.add(`${prefix}animated`, animationName)
 
-        // When the animation ends, we clean the classes and resolve the Promise
+        // When  animation ends, we clean the classes and resolve the Promise
         function handleAnimationEnd(event) {
             event.stopPropagation()
             el.classList.remove(`${prefix}animated`, animationName)
@@ -115,4 +117,23 @@ function debounce(fn, wait) {
             fn.apply(context, args) // call the function if time expires
         }, wait)
     }
+}
+function makeLorem(size = 1) {
+    var words = ['The sky', 'above', 'port', 'was', 'color ', 'tuned', 'to', ' channel', 'All', ' happened', 'more', 'I', 'had', 'story', 'bit', 'various', 'and', 'generally', 'happens', 'cases', 'time', 'it', 'was', 'story', 'It', 'was', 'pleasure', 'to', 'burn']
+    var txt = ''
+    while (size > 0) {
+        size--
+        txt += words[Math.floor(Math.random() * words.length)] + ''
+    }
+    return txt
+}
+function makePhoneNumber(length = 8) {
+    var txt = ''
+    var possible = '0123456789'
+
+    for (var i = 0; i < length; i++) {
+        txt += possible.charAt(Math.floor(Math.random() * possible.length))
+    }
+
+    return txt
 }
