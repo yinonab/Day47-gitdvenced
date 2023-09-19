@@ -1,4 +1,7 @@
- import {ContactIndex} from '../../'
+import {AppHeader} from './pages/AppHeader.jsx'
+import {ContactIndex} from './pages/ContactIndex.jsx'
+import { store } from './store/store.js'
+
 
 
  const Router = ReactRouterDOM.HashRouter
@@ -18,7 +21,7 @@ export function App() {
                         <Routes>
                             {/* <Route element={<HomePage />} path="/" />
                             <Route element={<AboutUs />} path="/about" /> */}
-                            <Route element={<TodoIndex />} path="/" />
+                            <Route element={<ContactIndex />} path="/" />
                         </Routes>
                     </main>
                     {/* <AppFooter /> */}
