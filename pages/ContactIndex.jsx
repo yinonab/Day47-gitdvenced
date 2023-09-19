@@ -37,11 +37,12 @@ export function ContactIndex() {
     }
 
     function onEditContact(contact) {
-        const txt = prompt('New txt?')
-        const contactToSave = { ...contact, txt }
+        const firstName = prompt('New Name?')
+        const phone = +prompt('New Name?')
+        const contactToSave = { ...contact,firstName,phone }
         saveContact(contactToSave)
             .then((savedContact) => {
-                showSuccessMsg(`Contact updated txt to: $${savedContact.txt}`)
+                showSuccessMsg(`Contact updated txt to: $${savedContact.firstName}`)
             })
             .catch(err => {
                 console.log('Cannot update contact', err)
