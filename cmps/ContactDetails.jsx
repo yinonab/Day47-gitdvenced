@@ -1,4 +1,4 @@
-export function ContactDetails(onRemoveContact,onEditContact,contacts,contact){
+export function ContactDetails({onRemoveContact,onEditContact,contact}){
     return (
         <article>
 
