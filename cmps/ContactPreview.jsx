@@ -3,7 +3,7 @@ export function ContactPreview({onRemoveContact,onEditContact,contact}){
         <article>
 
             <h1>Contact</h1>
-            <p><strong>{contact.firstname+' '+contact.lastname} </strong></p>
+            <p><strong>{contact.firstName+' '+contact.lastName} </strong></p>
             <p><strong>{contact.email} </strong></p>
             <p><strong>{contact.phone} </strong></p>  
             <div className="contact-buttons">

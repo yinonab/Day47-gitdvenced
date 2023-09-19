@@ -1,6 +1,6 @@
 import { ContactPreview } from "./ContactPreview.jsx" 
 
-export function ContactList({onRemoveContact, onEditContact }){
+export function ContactList({onRemoveContact, onEditContact,contacts }){
     return (
         <ul className="contact-list">
             {contacts.map(contact =>
