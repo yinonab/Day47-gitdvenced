@@ -40,3 +40,55 @@ i.fas {
   font-size: 20px;
   margin-right: 5px;
 }
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info {
+    margin: 10px 0;
+  }
+  
+  .contact-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .remove-button,
+  .edit-button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .edit-button {
+    background-color: #5bc0de;
+  }
+  
+  .remove-button:hover,
+  .edit-button:hover {
+    background-color: #c9302c;
+  }
+
+  i.fas {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .contact-details-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .contact-details-link:hover {
+    text-decoration: underline;
+  }

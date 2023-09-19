@@ -13,7 +13,7 @@ export function ContactPreview({onRemoveContact,onEditContact,contact}){
                 <button className="edit-button" onClick={() => onEditContact(contact)}>
                     <i className="fa-solid fa-pen-to-square"></i>
                 </button>
-                <Link to={`/contact/${contact._id}`}>Contact Details</Link>
+                <Link to={`/contact/${contact._id}`} className="contact-details-link">Contact Details</Link>
             </div>     
         </article>
     )

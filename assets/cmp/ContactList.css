@@ -5,6 +5,7 @@
   align-items: center;
   margin-right: 25px;/* Create 3 columns with equal width */
   gap: 20px; /* Adjust the gap between grid items as needed */
+  font-family: 'Quicksand', sans-serif;
 }
 
 .contact-item {
