@@ -1,6 +1,6 @@
 .contact-list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); 
+  grid-template-columns: repeat(2, 1fr); 
   justify-content: space-between;
   align-items: center;
   margin-right: 25px;/* Create 3 columns with equal width */
