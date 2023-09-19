@@ -1,3 +1,4 @@
+const {  Link } = ReactRouterDOM
 export function ContactPreview({onRemoveContact,onEditContact,contact}){
     return (
         <article>
