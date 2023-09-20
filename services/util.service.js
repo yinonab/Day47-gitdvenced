@@ -119,7 +119,7 @@ function debounce(fn, wait) {
     }
 }
 function makeLorem(size = 1) {
-    var words = ['The sky', 'above', 'port', 'was', 'color ', 'tuned', 'to', ' channel', 'All', ' happened', 'more', 'I', 'had', 'story', 'bit', 'various', 'and', 'generally', 'happens', 'cases', 'time', 'it', 'was', 'story', 'It', 'was', 'pleasure', 'to', 'burn']
+    var words = ['sky', 'above', 'port', 'was', 'color ', 'tuned', 'to', ' channel', 'All', ' happened', 'more', 'I', 'had', 'story', 'bit', 'various', 'and', 'generally', 'happens', 'cases', 'time', 'it', 'was', 'story', 'It', 'was', 'pleasure', 'to', 'burn']
     var txt = ''
     while (size > 0) {
         size--
