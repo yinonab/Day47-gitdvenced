@@ -1,5 +1,5 @@
 import { ContactDetails } from './cmps/ContactDetails.jsx'
-import {AppHeader} from './pages/AppHeader.jsx'
+import { AppHeader } from './cmps/AppHeader.jsx' 
 import {ContactIndex} from './pages/ContactIndex.jsx'
 import { store } from './store/store.js'
 
