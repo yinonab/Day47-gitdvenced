@@ -1,0 +1,78 @@
+/* Default styles for all screen sizes */
+
+
+/* Desktop Media Query (min-width: 1024px) */
+@media screen and (max-width: 1760px) {
+    .contact-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px; /* Adjust the gap between grid items as needed */
+        font-family: 'Quicksand', sans-serif;
+      }
+      .add {
+        margin-left: 40em;
+         background-color: #25681a;
+         color: #fff;
+         border: none;
+         padding: 5px 10px;
+         cursor: pointer;
+         border-radius: 5px;
+       }
+    }
+
+@media screen and (max-width: 1260px) {
+    .contact-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px; /* Adjust the gap between grid items as needed */
+        font-family: 'Quicksand', sans-serif;
+      }
+    }
+@media screen and (max-width: 1090px) {
+    .contact-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px; /* Adjust the gap between grid items as needed */
+        font-family: 'Quicksand', sans-serif;
+      }
+}
+
+/* Tablet Media Query (max-width: 1023px) */
+@media screen and (max-width: 1023px) {
+    .note-index {
+        /* Example tablet styles */
+        grid-template-columns: 1fr 3fr;
+        /* Adjust column layout */
+        height: auto;
+        /* Allow content to determine height */
+    }
+
+    
+}
+
+/* Mobile Media Query (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    .contact-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px; /* Adjust the gap between grid items as needed */
+        font-family: 'Quicksand', sans-serif;
+      }
+      .add {
+        margin-left: 10em;
+         background-color: #25681a;
+         color: #fff;
+         border: none;
+         padding: 5px 10px;
+         cursor: pointer;
+         border-radius: 5px;
+       }
+}
