@@ -16,7 +16,7 @@
 
 .contact-details-title span {
     font-family: 'Amatic SC', cursive;
-  }
+}
 
 .contact-details-phone {
     font-size: 16px;
@@ -49,4 +49,71 @@
 .contact-details-back-link:hover {
     text-decoration: underline;
     color: #0056b3;
+}
+
+/* Center the loading animation */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensure the container takes up the full viewport height */
+}
+
+.lds-ripple {
+    /* Your existing styles for the loading animation */
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ripple div {
+    /* Your existing styles for the animation circles */
+    position: absolute;
+    border: 4px solid rgb(0, 0, 0);
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+    /* Your existing styles for the second circle */
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+
+    /* Your existing keyframes for the animation */
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    4.9% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    5% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
 }
