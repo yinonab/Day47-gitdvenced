@@ -5,6 +5,7 @@
 @import '../assets/cmp/ContactIndex.css';
 @import '../assets/cmp/UserMsg.css';
 @import '../assets/cmp/ContactDetails.css';
+@import '../assets/cmp/mq.css';
 
 /* Setup */
 @import'../assets/setup/typography.css';
