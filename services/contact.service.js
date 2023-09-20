@@ -41,10 +41,12 @@ function save(contact) {
 
 
 function getEmptyContact() {
+    let firstname=utilService.makeLorem()
+    let lastname=utilService.makeLorem()
     return {
-        firstName: utilService.makeLorem(),
-        lastName: utilService.makeLorem(),
-        email: utilService.makeLorem()+'@gmail.com',
+        firstName: firstname,
+        lastName: lastname,
+        email: firstname+lastname+'@gmail.com'.split(' ').join(''),
         phone:'052-'+ utilService.makePhoneNumber(),
     }
 }
