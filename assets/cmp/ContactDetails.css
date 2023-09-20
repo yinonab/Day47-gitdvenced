@@ -10,15 +10,19 @@
 .contact-details-title {
     font-size: 24px;
     margin-bottom: 10px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Caveat', cursive;
     font-weight: bold;
 }
+
+.contact-details-title span {
+    font-family: 'Amatic SC', cursive;
+  }
 
 .contact-details-phone {
     font-size: 16px;
     margin-bottom: 10px;
     color: #555;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Caveat', cursive;
     font-weight: bold;
 }
 
